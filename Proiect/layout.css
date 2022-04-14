@@ -1,0 +1,500 @@
+
+@media screen and (min-width:600px){
+
+    header{
+        background-color: #28282B;
+        height: 70px;
+        padding-left:10px;
+        padding-top: 10px;
+    }
+    header > h1{
+            text-align: center;
+            color: #D61A3C;
+            text-shadow: 3px 3px #3B3B3B;
+    }
+    *{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        background-color: #666666;
+    }
+    @keyframes deplasare{
+        0%{right:0%;}
+        100%{right:90%;}
+    }
+    @keyframes aparitie{
+        0%{opacity: 0;}
+        50%{opacity: 0.5;}
+        100%{opacity: 1;}
+    }
+    .stil{
+        background-color: red;
+    }
+    #logo {
+        padding: 0px;
+        position:relative;
+        bottom: 40px;
+        height: 70px;
+        transition: transform 0.5s;
+
+    }
+    #hamburger{
+        display: none;
+    }
+    header > img:hover{
+        transform: rotate(360deg) scale(0.75);
+        animation-play-state: paused;
+    }
+    nav{
+        height: 70px;
+        background-color: #D61A3C;
+    }
+    
+    
+    ul.meniu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+        
+    }
+    ul.meniu li {
+        border:solid;
+        flex-grow: 20;
+        background-color:  #D61A3C;
+    }
+    ul.submeniu {
+        visibility: hidden;
+    }
+    ul.meniu > li:hover > ul.submeniu{
+        visibility: visible;
+        width: 100%;
+        background-color: #D61A3C;
+        position:relative;
+        z-index:60;
+    }
+    
+    
+    ul.meniu, ul.submeniu {
+    list-style-type:none;
+    }
+    ul.meniu a {
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration:none;
+    color:black;
+    display: block;
+    width: 100%;
+
+    }
+    ul.meniu a:hover{
+        background-color: white;
+        color:darkcyan;
+    }
+    ul.meniu > li {
+    flex-grow: 1;
+    height:70px;
+    border:1px solid black;
+    text-align:center;
+    line-height:70px;
+    }
+    input{
+        display: none;
+    }
+    #ofertaSisteme{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #ofertaSisteme > figure{
+         margin: 0;
+        padding: 0;
+        width: 30%;
+        text-align: center;
+        opacity:1;
+        
+    }
+      #containerCautate{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #containerCautate> figure{
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        text-align: center;
+        opacity:1;
+       animation-name:aparitie;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+    }
+    #containerCautate > figure:nth-child(1){
+        animation-delay:0s;
+    }
+    #containerCautate > figure:nth-child(2){
+        
+        animation-delay:0.5s;
+    }
+    #containerCautate > figure:nth-child(3){
+        animation-delay:1s;
+    }
+    #containerCautate > figure:nth-child(4){
+        animation-delay:1.5s;
+    }
+    #containerCautate > figure:nth-child(5){
+        animation-delay:2s;
+    }
+    #containerCautate > figure:nth-child(6){
+        animation-delay:2.5s;
+    }
+    #container-pagina{
+        display:grid;
+        padding-top: 10px;
+        grid-gap:10px;
+        grid-template-areas:
+                            "despre despre despre reduceri reduceri"
+                            " oferte oferte oferte orar orar "
+                            "produseCautate produseCautate produseCautate produseCautate produseCautate"
+                            "locatie locatie locatie contact contact"
+    }
+
+    #produseCautate{
+        padding: 10px;
+        grid-area: produseCautate;
+        border: solid;
+        background-color: #D61A3C;
+
+    }
+      #contact{
+        grid-area: contact;
+        border: solid;
+        padding: 10px;
+        background-color: #D61A3C;
+    }
+    #locatie{
+        grid-area: locatie;
+        border: solid;
+        padding: 10px;
+        background-color: #D61A3C;
+    }
+    #program > table{
+        background-color: white;
+    }
+    #container-articol{
+        display: flex;
+    }
+    .sistemeReduse,.produseCautate{
+        width: 200px;
+        height: 200px;
+        transition: transform 0.2s; 
+        border-radius: 8px;
+    }
+    .sistemeReduse:hover {
+        transform: scale(1.5);
+    }
+    .produseCautate:hover {
+        transform: scale(1.5);
+    }
+    #despre{
+        border:solid;
+        padding:20px;
+        grid-area:despre;
+        background-color: #D61A3C;
+    }
+    #oferte{
+        border: solid;
+        padding: 10px;
+        grid-area: oferte;
+    }
+    #reduceri{
+        border:solid;
+        padding:10px;
+        grid-area: reduceri;
+        background-color:#D61A3C;
+    }
+    #program{
+        border:solid;
+        padding:10px;
+        grid-area: orar;
+        background-color: #D61A3C;
+    }
+    #oferte{
+        background-color: #D61A3C;
+    }
+    #galerie{
+        border:solid;
+        padding:10px;
+        grid-area: galerie;
+    }
+
+    body{
+        margin:0;
+        padding:0;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px){
+
+    header{
+        background-color: #28282B;
+        height: 70px;
+        width: 100%;
+        padding-left:10px;
+        padding-top: 10px;
+    }
+    header > h1{
+            text-align: center;
+            color: #D61A3C;
+            text-shadow: 3px 3px #3B3B3B;
+    }
+    *{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        background-color: #666666;
+    }
+    @keyframes deplasare{
+        0%{right:0%;}
+        100%{right:90%;}
+    }
+    @keyframes aparitie{
+        0%{opacity: 0;}
+        50%{opacity: 0.5;}
+        100%{opacity: 1;}
+    }
+    .stil{
+        background-color: red;
+    }
+    #logo {
+        display: none;
+
+    }
+    #hamburger{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    body > input{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        opacity: 0;
+        top: 10px;
+        left: 10px;
+    }
+    header > img:hover{
+        transform: rotate(360deg) scale(0.75);
+        animation-play-state: paused;
+    }
+    nav{
+        background-color: #D61A3C;
+        display: none;
+    }
+    
+    
+    ul.meniu{
+        border: solid;
+        padding-bottom: 10px;
+        
+    }
+    ul.meniu li {
+        border:solid;
+        background-color:  #D61A3C;
+    }
+    ul.submeniu {
+        display: none;
+    }
+    ul.submeniu>li{
+        background-color: pink;
+    }
+    ul.meniu > li:hover > ul.submeniu{
+        display: block;
+        width: 100%;
+        background-color: pink;
+    }
+    
+    
+    ul.meniu, ul.submeniu {
+    list-style-type:none;
+    }
+    ul.meniu a {
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration:none;
+    color:black;
+    display: block;
+    width: 100%;
+
+    }
+    ul.meniu a:hover{
+        background-color: white;
+        color:darkcyan;
+    }
+    ul.meniu > li {
+    border:1px solid black;
+    text-align:center;
+    line-height:70px;
+    }
+    input:checked ~nav{
+        display: block;
+    }
+    #ofertaSisteme{
+        flex-direction: column;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #ofertaSisteme > figure{
+         margin: 0;
+        padding: 0;
+        width: 30%;
+        text-align: center;
+        opacity:1;
+        
+    }
+      #containerCautate{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #containerCautate> figure{
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        text-align: center;
+        opacity:1;
+       animation-name:aparitie;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+    }
+    #containerCautate > figure:nth-child(1){
+        animation-delay:0s;
+    }
+    #containerCautate > figure:nth-child(2){
+        
+        animation-delay:0.5s;
+    }
+    #containerCautate > figure:nth-child(3){
+        animation-delay:1s;
+    }
+    #containerCautate > figure:nth-child(4){
+        animation-delay:1.5s;
+    }
+    #containerCautate > figure:nth-child(5){
+        animation-delay:2s;
+    }
+    #containerCautate > figure:nth-child(6){
+        animation-delay:2.5s;
+    }
+    #container-pagina{
+        display:block;
+        padding-top: 10px;
+        grid-gap:10px;
+        grid-template-areas:
+                            "despre despre despre reduceri reduceri"
+                            " oferte oferte oferte orar orar "
+                            "produseCautate produseCautate produseCautate produseCautate produseCautate"
+                            "locatie locatie locatie contact contact"
+    }
+
+    #produseCautate{
+        padding: 10px;
+        grid-area: produseCautate;
+        border: solid;
+        background-color: #D61A3C;
+
+    }
+      #contact{
+        grid-area: contact;
+        border: solid;
+        padding: 10px;
+        background-color: #D61A3C;
+    }
+    #locatie{
+        grid-area: locatie;
+        border: solid;
+        padding: 10px;
+        background-color: #D61A3C;
+    }
+    #program > table{
+        background-color: white;
+    }
+    #container-articol{
+        display: flex;
+    }
+    .sistemeReduse,.produseCautate{
+        width: 200px;
+        height: 200px;
+        transition: transform 0.2s; 
+        border-radius: 8px;
+    }
+    .sistemeReduse:hover {
+        transform: scale(1.5);
+    }
+    .produseCautate:hover {
+        transform: scale(1.5);
+    }
+    #despre{
+        border:solid;
+        padding:20px;
+        grid-area:despre;
+        background-color: #D61A3C;
+    }
+    #oferte{
+        border: solid;
+        padding: 10px;
+        grid-area: oferte;
+    }
+    #reduceri{
+        border:solid;
+        padding:10px;
+        grid-area: reduceri;
+        background-color:#D61A3C;
+    }
+    #program{
+        border:solid;
+        padding:10px;
+        grid-area: orar;
+        background-color: #D61A3C;
+    }
+    #oferte{
+        background-color: #D61A3C;
+    }
+    #galerie{
+        border:solid;
+        padding:10px;
+        grid-area: galerie;
+    }
+
+    body{
+        margin:0;
+        padding:0;
+    }
+
+}
+
+
+
+
+
+
+

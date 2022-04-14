@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Magazin TGT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+    <link href="layout.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Magazin TGT</h1>
+        <img id="logo" src="poze/logo.png" alt="logo">
+    </header>
+    <img id="hamburger" src="poze/hamburger.png" alt="ham">
+    <input type="checkbox">
+    <nav>
+        <ul class="meniu">
+
+            <li><a href='#'>Acasa</a>
+                <ul class="submeniu">
+                    <li><a href="#despre">Despre Noi</a></li>
+                    <li><a href="#oferte">Oferte</a></li>
+                    <li><a href="#reduceri">Perioade Reduceri</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#produseCautate">Produse Cautate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#locatie">Locatie</a></li>
+                </ul>
+            </li>
+            <li><a href="sisteme.html">Produse</a>
+                <ul class="submeniu">
+                    <li><a href="sisteme.html">Sisteme</a></li>
+                    <li><a href="">Periferice</a></li>
+                </ul>
+            </li>
+            <li><a href="servicii.html">Servicii</a>
+                <ul class="submeniu">
+                    <li><a href="servicii.html#curatare">Curatare</a></li>
+                    <li><a href="servicii.html#reparare">Reparare</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.trustpilot.com/review/mediagalaxy.ro">Recenzii</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="container-pagina">
+
+
+            <section id="despre">
+                <h2>Despre noi</h2>
+                <p>Suntem o echipă de profesionești ce cauta sa ofere servicii și produse de cea mai înaltă calitate!</p>
+            </section>
+
+            <section id="reduceri">
+                <h2>Perioade Reduceri</h2>
+                <p><time datetime="2022-04-01">1 aprilie 2022</time>- <time datetime="2022-04-29"> 29  aprilie 2022</time>: Reduceri Paște</p>
+                <p><time datetime="2022-12-01">1 Decembrie 2022</time>- <time datetime="2022-12-29"> 29  Decembrie 2022</time>: Reduceri Crăciun</p>
+    
+            </section>
+            <section id="oferte">
+                <h2>Ultimele Oferte</h2>
+                <div id="ofertaSisteme">
+                    <figure>
+                        <img src="poze/asus1.jpg" alt="Sistem1" class="sistemeReduse">
+                        <figcaption>Sistem ASUS: <s>9999</s>-8000</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="poze/sistem1.jpg" alt="Sistem2" class="sistemeReduse">
+                        <figcaption>Sistem Gaming Extreme: <s>15000</s>-13000</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="poze/sistem2.jpg" alt="Sistem3" class="sistemeReduse">
+                        <figcaption>Sistem Goblin: <s>6000</s>-4500</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="program">
+                <h2>Program</h2>
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Perioadă</th>
+                            <th>Zi</th>
+                            <th>Interval Orar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">Zile<br />Lucrătoare</td>
+                            <td>Luni</td>
+                            <td>10-18</td>
+                        </tr>
+                        <tr>
+
+                            <td>Marti</td>
+                            <td>10-18</td>
+                        </tr>
+                        <tr>
+
+                            <td>Miercuri</td>
+                            <td>10-18</td>
+                        </tr>
+                        <tr>
+
+                            <td>Joi</td>
+                            <td>10-18</td>
+                        </tr>
+                        <tr>
+
+                            <td>Vineri</td>
+                            <td>10-18</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Weekend</td>
+                            <td>Sambata</td>
+                            <td>12-16</td>
+                        </tr>
+                        <tr>
+                            <td>Duminica</td>
+                            <td colspan="1">inchis</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="produseCautate">
+                <h2>Cele mai cautate produse:</h2>
+                <div id="containerCautate">
+                    <figure>
+                        <img src="poze/mouse1.jpg" alt="Mouse1" class="produseCautate">
+                        <figcaption>Mouse Razer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="poze/mouse2.jpg" alt="Mouse2" class="produseCautate">
+                        <figcaption>Mouse Razer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="poze/mouse3.jpg" alt="Mouse3" class="produseCautate">
+                        <figcaption>Mouse + Mouse Pad</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="poze/monitor1.jpg" alt="Monitor1" class="produseCautate">
+                        <figcaption>Monitor HD</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="poze/monitor2.jpg" alt="Monitor2" class="produseCautate">
+                        <figcaption>Monitor Ultra-HD</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="poze/casti1.jpg" alt="Casti1" class="produseCautate">
+                        <figcaption>Casti</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="locatie">
+                <h2>Locatie</h2>
+                <address>Șoseaua București-Ploiești 42D, București 015011</address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.438776727338!2d26.087247915525715!3d44.50616527910134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b202e6bfdf12cb%3A0xbb265fe69fd2b14!2sB%C4%83neasa%20Shopping%20City!5e0!3m2!1sro!2sro!4v1649885409752!5m2!1sro!2sro" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: magazintgt@yahoo.com<br> Telefon: 0752039030</p>
+                <a href="https://www.instagram.com/">
+         <img alt="Insta" src="poze/instagram.jpg"
+         width="30" height="30">
+        </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+       <h4> Copyright 2022 &copy;</h4>
+    
+
+    </footer>
+</body>
+
+</html>
